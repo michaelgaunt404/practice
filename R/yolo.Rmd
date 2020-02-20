@@ -1,7 +1,7 @@
 ---
 title: "analysis"
 author: "Mike Gaunt"
-date: format(Sys.time(), '%Y%m%d_%H%M%S')
+date: '`r format(Sys.Date(), "%B %d, %Y")`'
 output: html_document
 ---
 
@@ -36,7 +36,25 @@ Sys.Date()
   format(Sys.time(), '%Y%m%d_%H%M%S')
 ```
 
+```{r}
+library(data.table)
+library(ggplot2)
+library(tidyverse)
+```
 
+
+```{r}
+bikeshare.data = fread("../data/austin_bikeshare_trips.csv", 
+                          header = TRUE, stringsAsFactors = FALSE) 
+```
+
+```{r}
+bikeshare.data %>% 
+  .[,.(.N), by = .(month)] %>% 
+  na.omit() %>% 
+  ggplot() + 
+  geom_line(aes(month, N))
+```
 
 
 
