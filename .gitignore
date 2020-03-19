@@ -17,4 +17,4 @@ austin_bikeshare_stations.csv
 #example: name/ -> gets rid of folders with this name
 #example: name/** -> gets rid of all files in folder
 data_secret/
-secret/*
+secret/
