@@ -9,6 +9,8 @@
 #example: /name.extrension -> single file
 #example: *.extension -> all files with this extension
 /annual_csv.csv
+austin_bikeshare_stations.csv
+/austin_weather
 /.env.txt
 
 #folders~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
