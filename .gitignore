@@ -8,7 +8,7 @@
 #files~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 #example: /name.extrension -> single file
 #example: *.extension -> all files with this extension
-/annual_csv.csv
+annual_csv.csv
 austin_bikeshare_stations.csv
 /austin_weather
 /.env.txt
@@ -17,4 +17,4 @@ austin_bikeshare_stations.csv
 #example: name/ -> gets rid of folders with this name
 #example: name/** -> gets rid of all files in folder
 data_secret/
-secret/**
+secret/*
